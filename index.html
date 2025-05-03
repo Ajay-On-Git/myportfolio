@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajay Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: #1e293b;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #38bdf8;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    .section {
+      padding: 4rem 2rem;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e293b;
+      color: #ccc;
+    }
+    a {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Ajay Kumar</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1 data-aos="fade-down">Hi, I'm Ajay 👋</h1>
+    <p data-aos="fade-up">Computer Science Student (AI & ML) | Web Developer</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>I am a 3rd-year B.Tech CSE (AI & ML) student at ANITS, passionate about software development and learning new technologies. I have completed internships and obtained certifications that complement my skills in programming and problem-solving.</p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML & CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React.js</div>
+      <div class="card">Node.js</div>
+      <div class="card">C / C++</div>
+      <div class="card">Python</div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-book fa-lg" style="color: #38bdf8;"></i>
+          <h3 style="margin: 0; font-size: 1.3rem; color: #facc15;">Library Management System</h3>
+        </div>
+        <p style="margin-top: 0.5rem;">A system for managing books, student borrowings, and returns using HTML, CSS, PHP, and MySQL.</p>
+      </div>
+      <div class="card">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-utensils fa-lg" style="color: #38bdf8;"></i>
+          <h3 style="margin: 0; font-size: 1.3rem; color: #facc15;">Online Food Ordering</h3>
+        </div>
+        <p style="margin-top: 0.5rem;">Allows users to browse menus, place orders, and receive food at home. Built with modern web technologies for a seamless experience.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <ul>
+        <li>
+          <p><strong>Anil Neerukonda Institute of Technology and Sciences (ANITS), Visakhapatnam</strong><br>B.Tech in Computer Science and Engineering (AI & ML) - 2022 to 2026</p>
+        </li>
+        <li>
+          <p><strong>Uma Maheswara Junior College, Ongole</strong><br>Passed in 2022 with 78%</p>
+        </li>
+        <li>
+          <p><strong>Sahara High School, Kamepalli</strong><br>Passed in 2020 with 98%</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="card" style="max-width: 500px; margin: auto; text-align: left;">
+      <p><strong>Name:</strong> Ajay Kumar</p>
+      <p><strong>Email:</strong> ajaykumarpurimitla@gmail.com</p>
+      <p><strong>Phone:</strong> +91-7780389576</p>
+      <p><strong>Location:</strong> Visakhapatnam, Sangivalasa</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/Ajay kumar purimitla" target="_blank">linkedin.com/in/ajaykumar</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Ajay-On-Git" target="_blank">github.com/ajaykumar</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ajay Kumar | Connect with me on
+      <a href="https://github.com/ajaykumar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/ajaykumar" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
